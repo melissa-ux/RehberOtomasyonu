@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5ECE864D-6F1B-42D8-86B7-74FE46F52365}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RehberOtomasyonu</RootNamespace>
+    <AssemblyName>RehberOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\RehberOtomasyonu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\RehberOtomasyonu.Designer.cs">
+      <DependentUpon>RehberOtomasyonu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HakkındaTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HakkındaTürkçe.Designer.cs">
+      <DependentUpon>HakkındaTürkçe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkındaİngilizce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkındaİngilizce.Designer.cs">
+      <DependentUpon>Hakkındaİngilizce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KişiEkleTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KişiEkleTürkçe.Designer.cs">
+      <DependentUpon>KişiEkleTürkçe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KişiEkleİngilizce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KişiEkleİngilizce.Designer.cs">
+      <DependentUpon>KişiEkleİngilizce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KişiGüncelleTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KişiGüncelleTürkçe.Designer.cs">
+      <DependentUpon>KişiGüncelleTürkçe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KişiGüncelleİngilizce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KişiGüncelleİngilizce.Designer.cs">
+      <DependentUpon>KişiGüncelleİngilizce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KişiSilTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KişiSilTürkçe.Designer.cs">
+      <DependentUpon>KişiSilTürkçe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KişiSilİngilizce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KişiSilİngilizce.Designer.cs">
+      <DependentUpon>KişiSilİngilizce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıGirişiTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıGirişiTürkçe.Designer.cs">
+      <DependentUpon>KullanıcıGirişiTürkçe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıGirişiİngilizce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıGirişiİngilizce.Designer.cs">
+      <DependentUpon>KullanıcıGirişiİngilizce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RehberrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RehberrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RehberTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RehberTürkçe.Designer.cs">
+      <DependentUpon>RehberTürkçe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rehberİngilizce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rehberİngilizce.Designer.cs">
+      <DependentUpon>Rehberİngilizce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniKişiEkleTürkçe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKişiEkleTürkçe.Designer.cs">
+      <DependentUpon>YeniKişiEkleTürkçe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\RehberOtomasyonu.resx">
+      <DependentUpon>RehberOtomasyonu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HakkındaTürkçe.resx">
+      <DependentUpon>HakkındaTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkındaİngilizce.resx">
+      <DependentUpon>Hakkındaİngilizce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KişiEkleTürkçe.resx">
+      <DependentUpon>KişiEkleTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KişiEkleİngilizce.resx">
+      <DependentUpon>KişiEkleİngilizce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KişiGüncelleTürkçe.resx">
+      <DependentUpon>KişiGüncelleTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KişiGüncelleİngilizce.resx">
+      <DependentUpon>KişiGüncelleİngilizce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KişiSilTürkçe.resx">
+      <DependentUpon>KişiSilTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KişiSilİngilizce.resx">
+      <DependentUpon>KişiSilİngilizce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıGirişiTürkçe.resx">
+      <DependentUpon>KullanıcıGirişiTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıGirişiİngilizce.resx">
+      <DependentUpon>KullanıcıGirişiİngilizce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RehberTürkçe.resx">
+      <DependentUpon>RehberTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rehberİngilizce.resx">
+      <DependentUpon>Rehberİngilizce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKişiEkleTürkçe.resx">
+      <DependentUpon>YeniKişiEkleTürkçe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RehberrDataSet.xsc">
+      <DependentUpon>RehberrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RehberrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RehberrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RehberrDataSet.xss">
+      <DependentUpon>RehberrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\pexels-bri-schneiter-346529.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tim-savage-2330029.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntome_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assigntome_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-QR_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
